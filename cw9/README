@@ -1,0 +1,18 @@
+Mateusz Ptasik
+
+Ten program implementuje wielowątkowe zliczanie w sekcji krytycznej przy użyciu mutexu do synchronizacji dostępu. Wątki wykonują iteracje przez sekcje, zwiększając licznik o 1 w każdej iteracji. Przed wejściem do sekcji krytycznej wątek blokuje mutex, a po opuszczeniu sekcji krytycznej go odblokowuje. Liczba wątków i sekcji jest przekazywana jako argumenty wiersza poleceń. Na koniec program sprawdza, czy otrzymana liczba zgadza się z oczekiwaną wartością.
+
+
+Jako przykład wątków i sekcji w pliku Makefile został użyty ./main.x 4 3
+
+Instrukcje dotyczące Makefile:
+
+
+Kompilacja
+       make all
+Uruchomienie programu 
+       make run9 
+Wyczyszczenie zawartosci katalogu 
+       make clean
+
+
