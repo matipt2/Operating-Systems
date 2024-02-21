@@ -1,0 +1,21 @@
+Mateusz Ptasik
+
+Ćwiczenie nr 8: Posługując się mechanizmem kolejek komunikatów standardu POSIX, program
+przedstawia zadanie typu klient-serwer z możliwościa obsługi wielu klientów
+na raz. Proces klienta wysyla do procesu serwera żądanie wykonania działania
+arytmetycznego na dwóch liczbach postaci "liczba" "operator" "liczba", 
+gdzie operator to +, -, *, /. Serwer wykonuje działanie i odsyła je do klienta.
+Katalog zawiera 3 programy w języku C:
+serwer.c - serwer obsługuje działania matematyczne przesyłane przez klientów za pomocą kolejek, później przesyła wynik do klienta.
+klient.c - za pomocą kolejek komunikuje sie z serwerem i odbiera wynik.
+//biblioteki//
+
+
+W katalogu znajduje się program Makefile, który ułatwia kompilowanie i uruchamianie programów.
+
+Kompilacja
+       make all
+Uruchomienie programu 
+       make run8  
+
+
